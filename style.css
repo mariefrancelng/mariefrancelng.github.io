@@ -5,7 +5,7 @@ html, body {
 }
 
 body{
-    background-color: #050d19;
+    background-color: #09162Bff;
     color: white;
 }
 
@@ -25,7 +25,7 @@ nav{
 }
 
 nav img{
-    width: 50%;
+    width: 12em;
     display: flex;
 }
 
@@ -52,7 +52,7 @@ nav li:hover{
 }
 
 nav a:hover{
-    color: #e9edc9;
+    color: #d0ffff;
 }
 
 #introduction{
@@ -172,23 +172,34 @@ nav a:hover{
     font-size: 1.2em;
     text-align: center;
     margin: 0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#link{
+#links{
     height: 100%;
     margin: 100px;
     display: flex;
     justify-content: center;
-    justify-content: center;
+    flex-direction: column;    
+    gap: 100px;
+    align-items: center;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
     gap: 100px;
 }
 
-#link a{
+#links a{
     display: flex;
     gap: 30px;
 }
 
-#link a {
+#links a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,16 +214,71 @@ nav a:hover{
     transition: transform 0.3s;
 }
 
-#link a i{
+#links a i{
     font-size: 2em;
-    background: linear-gradient(45deg, #553285ff, #9A5698ff, #132043ff);
+    background: linear-gradient(45deg, #9B4B61ff, #070402ff, #1E101Cff, #113768ff, #3C1E30ff, #a3e0e6, #3be3d5, #6F3430);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     line-height: 1;
 }
 
-#link a:hover {
+#links a:hover {
     transform: scale(1.1); 
-    color: #0077b5; 
+}
+
+span.line{
+    width: 50%;
+    height: 2px;
+    background-color: #296286;
+    align-items: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Hubot Sans", sans-serif;
+    margin: 0 5%;
+    padding: 20px 0;
+}
+
+#buttons a {
+    width: 200px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1f42; 
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: solid 2.5px #495194;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+#buttons a:hover{
+    border: solid 2.5px #d0ffff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    max-width: 70%; 
+}
+
+.content h3 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.content p {
+    font-size: 20px;
+    margin: 5px 0; 
 }
