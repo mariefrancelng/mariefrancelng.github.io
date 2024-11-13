@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+body{
+    background-color: #050d19;
+    color: white;
+}
+
+nav{
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    padding: 0px 25px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+   transition: all .3s ease-in-out;
+   -webkit-box-shadow: 0px 11px 24px -10px #84a98c;
+   -moz-box-shadow: 0px 11px 24px -10px #52796f;
+   box-shadow: 0px 11px 24px -10px #354f52;
+}
+
+nav img{
+    width: 50%;
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Hubot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+nav li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+nav li:hover{
+    transform: scale(1.1);
+}
+
+nav a:hover{
+    color: #e9edc9;
+}
+
+#introduction{
+    background: linear-gradient(45deg, #9B4B61ff, #070402ff, #1E101Cff, #113768ff, #3C1E30ff, #070C1Aff, #09162Bff, #6F3430ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    height: 80vh;
+}
+      
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+#introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#introduction h1{
+    font-family: "Hubot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 6em;
+    margin: 0;
+}
+
+#quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    text-align: center;
+}
+
+#quote h3{
+    font-family: "Hubot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 80px; 
+    font-style: oblique;
+    font-size: 2.5em;
+    background: linear-gradient(90deg, #936cc0, #a93e5c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card:nth-child(1) {
+    margin-right: -60px;
+    transform: translateX(-20px);
+    z-index: 1;
+}
+
+.card:nth-child(2) {
+    margin-right: -60px;
+    transform: translateY(-20px);
+    z-index: 2; 
+}
+
+.card:nth-child(3) {
+    margin-right: -60px;
+    transform: translateX(20px);
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.1); 
+    z-index: 3; 
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+}
+
+#link{
+    height: 100%;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#link a{
+    display: flex;
+    gap: 30px;
+}
+
+#link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em; 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#link a i{
+    font-size: 2em;
+    background: linear-gradient(45deg, #553285ff, #9A5698ff, #132043ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1;
+}
+
+#link a:hover {
+    transform: scale(1.1); 
+    color: #0077b5; 
+}
