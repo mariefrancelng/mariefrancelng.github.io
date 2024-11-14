@@ -18,10 +18,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-   transition: all .3s ease-in-out;
-   -webkit-box-shadow: 0px 11px 24px -10px #84a98c;
-   -moz-box-shadow: 0px 11px 24px -10px #52796f;
-   box-shadow: 0px 11px 24px -10px #354f52;
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 0px 11px 24px -10px #84a98c;
+    -moz-box-shadow: 0px 11px 24px -10px #52796f;
+    box-shadow: 0px 11px 24px -10px #354f52;
 }
 
 nav img{
@@ -109,6 +109,7 @@ nav a:hover{
     font-size: 2.5em;
     background: linear-gradient(90deg, #936cc0, #a93e5c);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -281,4 +282,41 @@ span.line{
 .content p {
     font-size: 20px;
     margin: 5px 0; 
+}
+
+#presentation h1{
+    font-family: "Hubot Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 2.5em;
+    margin: 1em 1em;
+}
+
+
+
+.parcours{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.parcours img{
+    width: 30em;
+    height: 10em;
+    border-radius: 35%;
+    margin: 0.4em 4em;
+    border: thick double #495194;
+}
+
+.parcours p{
+    font-family: "Hubot Sans", sans-serif;
+    margin: 0.5em 2.5em;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
 }
