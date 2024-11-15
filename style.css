@@ -273,7 +273,7 @@ span.line{
     align-items: center;
     font-family: "Hubot Sans", sans-serif;
     font-size: 1.7em;
-    gap: 17em;
+    gap: 17px;
     color: #eaf0f7;
     margin-top: 0.7em;
 }
@@ -372,4 +372,174 @@ span.line{
 
 .icd p{
     margin: 0;
+}
+
+#skills{
+    background: linear-gradient(45deg, #141633ff, #343468ff, #464684ff, #140E1Bff, #312E56ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    border-top-right-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+    box-shadow: 9px 5px 10px 5px #252e62;
+    margin: 3em 7em 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-family: 'Hubot Sans', sans-serif;
+}
+
+#skills h2{
+    font-weight: 600;
+    font-size: 2em;
+}
+
+#skills li{
+    list-style-type: none;
+}
+
+.technical ul img{
+    width: 60px;
+    border-radius: 5px;
+}
+
+.technical ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 3em;
+}
+
+.soft ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+.langues{
+    margin-top: -3em;
+}
+
+.langues ul{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.key{
+    margin-top: -5em;
+}
+
+.key ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+.interest{
+    margin-top: -1em;
+}
+
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+#cv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Hubot Sans", sans-serif;
+    margin: 5% 10%;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+#cv a{
+    width: 200px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1f42;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: solid 2.5px #495194;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 20px;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+#cv p{
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+#cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hubot Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 20px;
+    margin: 5em 0px 3em 0px;
+}
+
+#cta a{
+    text-decoration: none;
+    color: white;
+}
+
+.projets, .case {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+.projets {
+    background: linear-gradient(-45deg, #062654, #2265a2);
+    box-shadow: 1px 1px 5px 5px #252e62;
+    padding: 20px;
+    border-radius: 5px;
+    padding-right: 25em;
+}
+
+.case {
+    padding-bottom: 10px;
+    border-bottom: 5px solid #2265a2;
+    padding-right: 25em;
+}
+
+.arrow {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg); 
+}
+
+.arrow svg {
+    width: 3em;
+    height: 3em;
+    fill: none;
+    stroke: #c9ccce;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
