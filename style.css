@@ -267,56 +267,109 @@ span.line{
     border: solid 2.5px #d0ffff;
 }
 
-.content {
+#picasso{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-    max-width: 70%; 
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Hubot Sans", sans-serif;
+    font-size: 1.7em;
+    gap: 17em;
+    color: #eaf0f7;
+    margin-top: 0.7em;
 }
 
-.content h3 {
-    font-size: 2em;
+#picasso .word{
+    font-weight: 600;
+}
+
+#picasso p{
+    font-weight: 200;
+}
+
+#presentation{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 2em 7.9em;
+    font-family: "Hubot Sans", sans-serif;
+}
+
+#presentation img{
+    height: 30em;
+    border-radius: 20% 40% 50% 70%;
+}
+
+.content h1{
+    color: #7fade0;
+    font-weight: 700;
+    font-size: 2.5em
+}
+
+.content p{
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+#formation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 2em 7.9em;
+    font-family: "Hubot Sans", sans-serif;
+}
+
+#formation h1{
+    color: #7fade0;
+    font-weight: 700;
+    font-size: 2.5em
+}
+
+.school h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.school p{
+    font-weight: 200;
+    font-size: 1em;
+}
+
+.eiml{
+    background: linear-gradient(45deg, #062654, #2265a2);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    border-radius: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 2.5px;
+}
+
+.eiml h3{
     margin: 0;
 }
 
-.content p {
-    font-size: 20px;
-    margin: 5px 0; 
+.eiml p{
+    margin: 0;
 }
 
-#presentation h1{
-    font-family: "Hubot Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100px;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-    font-size: 2.5em;
-    margin: 1em 1em;
+.icd{
+    background: linear-gradient(45deg, #062654, #2265a2);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 2.3px;
 }
 
-
-
-.parcours{
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
+.icd h3{
+    margin-bottom: 0;
 }
 
-.parcours img{
-    width: 30em;
-    height: 10em;
-    border-radius: 35%;
-    margin: 0.4em 4em;
-    border: thick double #495194;
-}
-
-.parcours p{
-    font-family: "Hubot Sans", sans-serif;
-    margin: 0.5em 2.5em;
-}
-
-.buttons{
-    display: flex;
-    flex-direction: column;
+.icd p{
+    margin: 0;
 }
