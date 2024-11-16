@@ -543,3 +543,53 @@ span.line{
     stroke-linecap: round;
     stroke-linejoin: round;
 }
+
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 5em;
+    font-family: 'Hubot Sans', sans-serif;
+}
+
+#title h1{
+    font-weight: 800;
+    font-size: 4em;
+    color: #7fade0;
+}
+
+#title p{
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+#web{
+    background: linear-gradient(45deg, #141633ff, #343468ff, #464684ff, #140E1Bff, #312E56ff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    border-top-right-radius: 80px 80px;
+    border-bottom-right-radius: 80px 80px;
+    box-shadow: 9px 5px 10px 5px #252e62;
+    margin: 3em 7em 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-family: 'Hubot Sans', sans-serif;
+}
+
+#web h2{
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.techskill img{
+    width: 100px;
+    padding: 1em;
+}
+
+.softskill{
+    grid-column: 2;
+    grid-row: -4;
+    grid-template-columns: 1fr 2fr;
+}
