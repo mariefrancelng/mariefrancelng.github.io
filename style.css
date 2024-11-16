@@ -576,20 +576,35 @@ span.line{
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
     font-family: 'Hubot Sans', sans-serif;
+    margin-bottom: 1em;
 }
 
-#web h2{
+#web h3{
     font-weight: 600;
     font-size: 2em;
 }
 
 .techskill img{
     width: 100px;
-    padding: 1em;
+    padding: 1.5em;
+}
+
+.softskill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: white;
+}
+
+.softskill h3 {
+    grid-column: span 2; 
+    text-align: center;
+    font-weight: bold;
 }
 
 .softskill{
-    grid-column: 2;
-    grid-row: -4;
-    grid-template-columns: 1fr 2fr;
+    font-weight: 400;
+    font-size: 1.2em;
 }
