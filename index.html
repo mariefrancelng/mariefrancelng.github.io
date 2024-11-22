@@ -8,73 +8,98 @@
     <link rel="icon" type="logo" href="MLF logo.svg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <img src="MLF logo.svg" alt="MFL's logo">
+        <a href="index.html"><img src="MLF logo.svg" alt="logo"></a>
         <ul>
-            <li><a class="link" href="index.html">Accueil</a></li>
-            <li><a class="link" href="apropos.html">À propos de moi</a></li>
-            <li><a class="link" href="projets.html">Réalisations</a></li>
-            <li><a class="link" href="etudedecas.html">Études de cas</a></li>
-            <li><a class="link" href="indexeng.html">EN</a></li>
+        <li><a class="lien" href="index.html">Accueil</a></li>
+            <li><a class="lien" href="projets.html" target="_blank" rel="noopener noreferrer" >Mes réalisations</a></li>
+            <li><a class="lien" href="#" target="_blank" rel="noopener noreferrer">EN</a></li>
         </ul>
     </nav>
+
     <main>
         <section id="introduction">
-                <h1>Marie-France LUNGANGA</h1>
-                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+            <img src="images/3D Model of Young Girl with Expressive Eyes.jpeg" alt="Avatar">
+            <div class="intro">
+                <h3><i>Marie-France LUNGANGA</i></h3>
+                <h2>Product manager</h2>
+                <p>Expertise in JavaScript, React, Node.js. Committed to creating robust, scalable, and user-friendly web applications.</p>
+            </div>
         </section>
-        <section id="quote">
+
+        <section id="quote" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="50" data-aos-easing="ease-in-out" class="aos-init aos-animate">
             <h3>Un bon travail doit aspirer, <br> mais un travail exceptionnel doit inspirer,<br> comme si rien de plus grand ne pouvait jamais exister.</h3>
         </section>
-        <section id="container">
-            <div class="card">
-                <a href="apropos.html">
-                    <img src="images/building.jpg" alt="img for about me">
-                </a>
-                <h3>À propos de moi</h3>
+
+        <section id="competences">
+            <div class="technique">
+                <h4>Compétences techniques</h4>
+                <div class="icon-skills">
+                    <i class="fa-brands fa-html5" style="color: #936cc0;"></i>
+                    <i class="fa-brands fa-css3-alt" style="color: #936cc0;"></i>
+                    <i class="fa-brands fa-js" style="color: #936cc0;"></i>
+                    <i class="fa-brands fa-python" style="color: #936cc0;"></i>
+                </div>
             </div>
-            <div class="card">
-                <a href="projets.html">
-                    <img src="images/neon.jpg" alt="img for projects">
-                </a>
-                <h3>Réalisations</h3>
-            </div>
-            <div class="card">
-                <a href="etudedecas.html">
-                    <img src="images/neon city.jpg" alt="img for case study">
-                </a>
-                <h3>Etude de cas</h3>
+            <div class="soft">
+                <h4>Compétences douces</h4>
+                <ul>
+                    <li>Communication</li>
+                    <li>Adaptabilité</li>
+                    <li>Problem solving</li>
+                    <li>Esprit d'équipe</li>
+                </ul>
             </div>
         </section>
-        <section id="links">
+
+        <section id="cv">
+            <p>
+                Parcourez mon histoire en téléchargeant mon CV.
+            </p>
+            <a href="https://www.canva.com/design/DAGSQYQLAa0/4wPyWPgcb0tayQN3A-xqVw/view" target="_blank" rel="noopener noreferrer">Explorez mon parcours</a>
+        </section>
+
+        <section id="cta">
+            <a href="projets.html" class="projets" target="_blank" rel="noopener noreferrer">
+                <p><strong><i>Et si... je vous montrais le cœur de mes réalisations ?</i></strong></p>
+                <span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="#296286" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+            </a>
+        </section>
+
+        <section id="icon-link">
             <div class="link">
-            <a title="lien github" href="https://github.com/mariefrancelng?tab=repositories" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fa-brands fa-github fa-beat"></i>
-            </a>
-            <a title="lien linkedin" href="https://www.linkedin.com/in/marie-france-lunganga" target="_blank"
-                rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin fa-beat"></i>
-            </a>
-        </div>
+                <a title="lien github" href="https://github.com/mariefrancelng?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a title="lien linkedin" href="https://www.linkedin.com/in/marie-france-lunganga" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin fa-beat"></i>
+                </a>
+            </div>
             <span class="line"></span>
         </section>
-
     </main>
-    <footer>
-        <div id="buttons">
-            <div class="content">
-            <h3>Et maintenant ?</h3>
-            <p>
-                Travaillons ensemble <br> pour transformer les rêves en un jardin de magie.
-            </p>
-            </div>
-            <a href="mailto:mariefrancelunganga@hotmail.fr">Discutons ?</a>
-        </div>
-    </footer>
-</body>
 
+    <footer>
+        <div class="content">
+            <h2>Et si nous allions plus loin ?</h2>
+            <p>
+                Ensemble, créons des sites où la performance rencontre l'élégance,<br> captivant chaque regard et marquant chaque esprit. Contactez-moi, <br> et écrivons ensemble le prochain chapitre de votre succès.
+            </p>
+        </div>
+            <a href="mailto:mariefrancelunganga@hotmail.fr">Discutons ?</a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
 </html>
