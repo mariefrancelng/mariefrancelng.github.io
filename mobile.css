@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Bar de navigation */
+    nav {
+        flex-wrap: wrap;
+        padding: 0.5em;
+    }
+    
+    nav img {
+        width: 8em; 
+        padding: 0.5em;
+    }
+    
+    nav ul {
+        flex-wrap: wrap; 
+        gap: 0.5em;
+        justify-content: center; 
+    }
+    
+    nav li {
+        margin: 0.3em; 
+    }
+    
+    nav a {
+        font-size: 0.9em; 
+    }
+    
+        
+    nav li:hover {
+        transform: scale(1.05); 
+    }
+    
+     /* Main */
+
+    #introduction {
+        flex-direction: column;
+        padding: 2em;
+        gap: 2em;
+        text-align: center;
+    }
+
+    #introduction img {
+        height: 15em;
+        width: auto;
+        border-radius: 30% 50% 50% 70%;
+    }
+
+    #quote {
+        height: auto;
+        padding: 1em;
+    }
+
+    #quote h3 {
+        font-size: 1.8em;
+    }
+
+    #competences {
+        flex-direction: column;
+        margin: 0;
+        padding: 2em;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .technique, .soft {
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    .icon-skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .icon-skills i {
+        font-size: 3em; 
+    }
+
+    #cv {
+        flex-direction: column;
+        margin: 2em;
+        gap: 2em;
+    }
+
+    #cv a {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    #cta {
+        padding: 1em;
+        font-size: 0.7em;
+    }
+
+    .projets {
+        flex-direction: column;
+        width: 100%;
+        padding: 1em;
+    }
+
+    #container {
+        padding: 20px;
+    }
+
+    .card-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .card-img img {
+        height: 150px;
+    }
+
+    .card-img h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-img p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        margin: 1em 0;
+        padding: 1em;
+        text-align: center;
+        gap: 1em;
+    }
+
+    footer a {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    footer h2 {
+        font-size: 2em;
+    }
+}
