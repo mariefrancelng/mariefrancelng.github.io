@@ -328,6 +328,10 @@ span.line{
     letter-spacing: 2px;
 }
 
+#title p {
+    margin: 3em;
+}
+
 #container{
     text-align: center;
     padding: 40px;
@@ -401,7 +405,7 @@ footer{
 }
 
 footer a{
-    width: 12.5em;
+    width: 14em;
     display: flex;
     height: 3.1em;
     align-items: center;
